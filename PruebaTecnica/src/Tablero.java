@@ -418,59 +418,30 @@ public class Tablero extends JFrame {
 		}
 		return;
 	}
-	/***********************************ANTES
+	
 	public boolean ganoPartido(Partido partido, int setsGanados1, int setsGanados2) {
 		if(partido.sets==3) {
 			if(setsGanados1==2) {
 				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador1 +"\nTorneo: "
-						+partido.torneo+"\n\n ¿Desea reiniciar el partido? ");
+						+partido.torneo+"\n Â¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
 				
 				return true;
 			}
 			if(setsGanados2==2) {
 				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador2 +"\nTorneo: "
-						+partido.torneo+"\n\n ¿Desea reiniciar el partido? ");
+						+partido.torneo+"\n Â¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
 				return true;
 			}
 		}
 		if(partido.sets==5) {
 			if(setsGanados1==3) {
 				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador1 +"\nTorneo: "
-						+partido.torneo+"\n ¿Desea reiniciar el partido? ");
+						+partido.torneo+"\n Â¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
 				return true;
 			}
 			if(setsGanados2==3) {
 				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido "+partido.jugador2 +"\n"+"\nTorneo: "
-						+partido.torneo+"\n ¿Desea jugar la revancha? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
-				return true;
-			}
-		}
-		return false;
-	}
-	*************************************/
-	public boolean ganoPartido(Partido partido, int setsGanados1, int setsGanados2) {
-		if(partido.sets==3) {
-			if(setsGanados1==2) {
-				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador1 +"\nTorneo: "
-						+partido.torneo+"\n ¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
-				
-				return true;
-			}
-			if(setsGanados2==2) {
-				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador2 +"\nTorneo: "
-						+partido.torneo+"\n ¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
-				return true;
-			}
-		}
-		if(partido.sets==5) {
-			if(setsGanados1==3) {
-				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido: "+partido.jugador1 +"\nTorneo: "
-						+partido.torneo+"\n ¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
-				return true;
-			}
-			if(setsGanados2==3) {
-				op = JOptionPane.showConfirmDialog(contentPane, "Ganador del partido "+partido.jugador2 +"\n"+"\nTorneo: "
-						+partido.torneo+"\n ¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
+						+partido.torneo+"\n Â¿ Desea jugar la revancha ? ","Fin del Partido", JOptionPane.YES_NO_OPTION);
 				return true;
 			}
 		}
